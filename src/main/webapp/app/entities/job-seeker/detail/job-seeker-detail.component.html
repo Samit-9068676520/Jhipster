@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="jobSeeker">
+      <h2 data-cy="jobSeekerDetailsHeading"><span>Job Seeker</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ jobSeeker.id }}</span>
+        </dd>
+        <dt><span>Name</span></dt>
+        <dd>
+          <span>{{ jobSeeker.name }}</span>
+        </dd>
+        <dt><span>Age</span></dt>
+        <dd>
+          <span>{{ jobSeeker.age }}</span>
+        </dd>
+        <dt><span>Experience</span></dt>
+        <dd>
+          <span>{{ jobSeeker.experience }}</span>
+        </dd>
+        <dt><span>Ctc</span></dt>
+        <dd>
+          <span>{{ jobSeeker.ctc }}</span>
+        </dd>
+        <dt><span>Exp CTC</span></dt>
+        <dd>
+          <span>{{ jobSeeker.expCTC }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/job-seeker', jobSeeker.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -41,6 +41,8 @@
     "jwtSecretKey": "YmFjYzZkNjExZjMxYzlhZjFiODU4ZTRmMDA0MGQwY2M2N2I3OWJiMDdlNzNjZDc1NmFmZDQ3NjBiYjczNDcxZjAzZGYwNGM4N2NiOTE4NzE4NTlkZTM0OTA0ODM0NGM4MWQyMDMyZTZhZjJiNmM0YWI0MDUyOTMxNDU4NGFjZDQ=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "lastLiquibaseTimestamp": 1620735349000,
+    "entities": ["JobSeeker"]
   }
 }

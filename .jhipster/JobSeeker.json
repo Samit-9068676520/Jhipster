@@ -1,0 +1,33 @@
+{
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "experience",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ctc",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "expCTC",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceImpl",
+  "dto": "no",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "infinite-scroll",
+  "name": "JobSeeker",
+  "changelogDate": "20210511121549"
+}
